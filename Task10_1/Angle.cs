@@ -38,14 +38,14 @@ namespace Task10_1
         }
         public Angle(int grade, int minute, int second)
         {
-            this.grade = grade;
-            this.minute = minute;
-            this.second = second;
+            this.Grade = grade;
+            this.Minute = minute;
+            this.Second = second;
         }
 
         public double ToRadian()
         {
-            return ((grade + (double) minute / 60 + (double)second / 3600) * (Math.PI)) / 180;
+            return ((Grade + (double) Minute / 60 + (double)Second / 3600) * (Math.PI)) / 180;
         }
 
     }
